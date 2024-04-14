@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web Accessible pour les Malvoyants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header,
+        footer,
+        main,
+        nav,
+        article,
+        aside {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+
+        header {
+            background: #0066cc;
+            color: #fff;
+        }
+
+        footer {
+            background: #444;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a,
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        a,
+        button {
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        a:hover,
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Amélioration de l'Accessibilité Web</h1>
+        <p>Un guide vers un web plus accessible pour les personnes malvoyantes.</p>
+    </header>
+
+    <nav aria-label="Navigation principale">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#methods">Méthodes d'Accessibilité</a></li>
+            <li><a href="#resources">Ressources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introduction" aria-label="Introduction">
+            <h2>Introduction</h2>
+            <p>Ce site démontre l'application des meilleures pratiques et des stratégies pour améliorer l'accessibilité web en faveur des personnes malvoyantes, conformément aux normes WCAG 2.1.</p>
+        </section>
+
+        <section id="methods" aria-label="Méthodes d'Accessibilité">
+            <h2>Méthodes d'Accessibilité</h2>
+            <article>
+                <h3>Contrastes Élevés</h3>
+                <p>Implémentation de thèmes à haut contraste pour améliorer la lisibilité du texte pour les utilisateurs ayant des déficiences visuelles.</p>
+            </article>
+            <article>
+                <h3>Texte Ajustable</h3>
+                <p>Mise en place de fonctionnalités permettant aux utilisateurs de modifier la taille du texte selon leurs besoins sans perturber la disposition du site.</p>
+            </article>
+            <article>
+                <h3>Navigation au Clavier</h3>
+                <p>Assurance que tout le contenu du site est navigable en utilisant uniquement le clavier, facilitant l'accessibilité pour ceux qui ne peuvent pas utiliser une souris.</p>
+            </article>
+            <article>
+                <h3>Balises ARIA</h3>
+                <p>Utilisation des balises ARIA pour assurer que les contenus dynamiques et les composants d'interface utilisateur complexes sont accessibles.</p>
+            </article>
+        </section>
+
+        <section id="resources" aria-label="Ressources">
+            <h2>Ressources Utiles</h2>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Directives WCAG 2.1 du W3C</a></li>
+                <li><a href="https://www.accessibility-developer-guide.com/">Guide du développeur d'accessibilité</a></li>
+                <li><a href="https://a11yproject.com/">The A11Y Project</a></li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-label="Contactez-nous">
+            <h2>Contactez-nous</h2>
+            <p>Pour des questions ou un besoin d'assistance, veuillez contacter notre équipe.</p>
+            <button onclick="alert('Merci de nous avoir contactés !')">Envoyer un Message</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Suivez notre activité sur <a href="#">les réseaux sociaux</a></p>
+    </footer>
+
+</body>
+
+</html>
